@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+</head>
+<body>
+    <h1>My Shopping List</h1>
+    <form action="">
+    Enter your items here :<input type="text" class="item">
+    <button>Add Item</button>
+    </form>
+    <ul>
+        <!-- <li>Hello</li>
+        <li>Hi</li> -->
+    </ul>
+
+    <!-- <ol>
+        <li>come</li>
+        <li>go</li>
+    </ol> -->
+    <script>
+      // const inputText     = document.getElementsByClassName("item");
+       const abtn = document.querySelector("button");
+       const input = document.querySelector("input");
+       const ul  = document.querySelector("ul");
+      // ul.appendChild(inputText);
+
+//        const AddshoppingItem ()=>({
+
+// preventDefault();
+
+/*  Adding  the event listener to the submit button element/node that we  referenced or selected and stored in a variable  */
+abtn.addEventListener('click',(event)=>{
+
+    //
+event.preventDefault();
+//capture  the value from input  and store it in this variable
+     const inputText    = input.value;
+     //clear the input element by setting it's input vaalue to an empty string 
+     input.value = "";
+
+//create these elements/nodes
+const  li =  document.createElement("li") ;
+
+const  spanFortext =  document.createElement("span") ;
+const  dbtn =  document.createElement("button") ;
+
+//set the list  value/content to that of the input value 
+spanFortext.textContent = inputText ;
+//set  the content of  the delete button to be appended  to delete 
+dbtn.textContent = "DELETE" ;
+
+//append  the created span element and button to the created list element
+li.appendChild(spanFortext);
+li.appendChild(dbtn);
+//finally append this new or virtually or dynamically added list element  to the empty  unordered list element 
+ul.appendChild(li)
+
+//set forcus  to the input element so that it is ready to take in the new text element 
+input.forcus;
+
+
+
+} )
+
+
+    </script>
+</body>
+</html>
