@@ -58,6 +58,20 @@ li.appendChild(dbtn);
 //finally append this new or virtually or dynamically added list element  to the empty  unordered list element 
 ul.appendChild(li)
 
+
+
+//add an event listener /function to listen to the click event on the delete button and eexcute the function or method written
+dbtn.addEventListener('click',()=>{
+
+//remove the  newly created list element or node / and it will disappear with it's textContent which was picked from the input value .
+/*li.remove();
+li.parentNode.removeChild(li) */
+
+//from the unordered list element (ul)  remove  it's child (previously append element /node) which is list (li)from it
+ul.removeChild(li) ;
+
+})
+
 //set forcus  to the input element so that it is ready to take in the new text element 
 input.forcus;
 
