@@ -28,6 +28,10 @@ link.href="https://developer.mozilla.org";
   para.textContent="We hope you enjoyed  the ride ";
   //append the  para element to the section element/node in this case it will be it's childnode /childelement.
   sect.appendChild(para);
+  //creating a text node and adding it below the paragraph 
+   const text  = document.createTextNode("-the premium source for web development knowledge");
+   const linkPara = document.querySelector('p');
+   linkPara.appendChild(text);
 
     </script>
 </body>
