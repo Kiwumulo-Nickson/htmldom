@@ -32,6 +32,18 @@ link.href="https://developer.mozilla.org";
    const text  = document.createTextNode("-the premium source for web development knowledge");
    const linkPara = document.querySelector('p');
    linkPara.appendChild(text);
+   //move  the elements/node  and delete elements 
+   sect.appendChild(linkPara);
+   //deleting nodes : must reference the child and parent node 
+
+   //sect.removeChild(linkPara);
+   //linkPara.remove();
+   // for older versions of the websites   
+   linkPara.parentNode.removeChild(linkPara);
+
+
+
+
 
     </script>
 </body>
